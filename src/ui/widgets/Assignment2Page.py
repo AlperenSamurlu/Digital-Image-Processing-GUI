@@ -4,6 +4,8 @@ from PyQt5.QtCore import Qt
 import cv2
 import numpy as np
 
+
+
 class Assignment2Page(QWidget):
     def __init__(self):
         super().__init__()
