@@ -18,7 +18,7 @@
 
 Bu projede, ödev yönergesinde belirtilen görüntü işleme tekniklerini uygulayan PyQt5 tabanlı bir arayüz geliştirilmiştir. Uygulama, 1. ödevde hazırlanan menü yapısına entegre edilmiş olup kullanıcı dostu etkileşimli tasarım prensiplerine uygun olarak geliştirilmiştir.
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\arayuz.png)
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/arayuz.png)
 
 ## S-Curve Kontrast Güçlendirme (30 Puan)
 
@@ -52,7 +52,7 @@ gibi kritik uygulamalarda kullanılır.
 - **Özellik:** Orta tonları dengeli şekilde vurgular
 - **Formül:** `f(x) = 1/(1+e^(-10*(x-0.5)))`
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\standart%20sigmoid.png)
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/standart%20sigmoid.png)
 
 #### b) Kaydırılmış Sigmoid Fonksiyonu (5 Puan)
 
@@ -60,7 +60,7 @@ gibi kritik uygulamalarda kullanılır.
 - **Özellik:** Koyu tonları özellikle vurgular
 - **Formül:** `f(x) = 1/(1+e^(-10*(x-0.3)))`
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\kaydirilmis%20sigmoid.png)**
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/kaydirilmis%20sigmoid.png)**
 
 #### c) Eğimli Sigmoid Fonksiyonu (5 Puan)
 
@@ -68,7 +68,7 @@ gibi kritik uygulamalarda kullanılır.
 - **Özellik:** Keskin kontrast geçişleri oluşturur
 - **Formül:** `f(x) = 1/(1+e^(-25*(x-0.5)))`
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\egimli%20sigmoid.png)**
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/egimli%20sigmoid.png)**
 
 #### d) Özel Tasarlanmış Fonksiyon (10 Puan)
 
@@ -90,7 +90,7 @@ else:
     result = 0.5 + 0.5 * (1/(1+exp(-12*(2*x-0.7))))
 ```
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\ozelfonk.png)**
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/ozelfonk.png)**
 
 ## Hough Transform Uygulamaları (30 Puan)
 
@@ -144,7 +144,7 @@ Hough Transform, görüntülerde geometrik şekilleri tespit etmek için kullan�
    - Sol çizgiler: slope < -0.3
    - Sağ çizgiler: slope > 0.3
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\yol.png)
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/yol.png)
 
 ### b) Göz Tespiti (10 Puan)
 
@@ -166,7 +166,7 @@ Hough Transform, görüntülerde geometrik şekilleri tespit etmek için kullan�
    - Yüz: Mavi dikdörtgen
    - Göz: Yeşil daire
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\goz.png)
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/goz.png)
 
 ## Deblurring Algoritması (10 Puan)
 
@@ -234,7 +234,7 @@ wiener = H_conj / (|H|² + 0.01)
 sharpened = 1.5*result - 0.5*gaussian_blur
 ```
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\deblur.png)
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/deblur.png)
 
 ## Nesne Sayımı ve Özellik Çıkarımı (40 Puan)
 
@@ -284,7 +284,7 @@ with pd.ExcelWriter(filename, engine='openpyxl') as writer:
     df.to_excel(writer, sheet_name='Koyu Yeşil Alanlar')
 ```
 
-![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](C:\Users\asamu\OneDrive\Desktop\Klasor\3.Sınıf\Bahar\Görüntü%20İşleme\image-processing-app\ss\nesnesayimi.png)
+![**[Ekran Görüntüsü 1: Ana arayüz entegrasyonu - Assignment3Page]**](ss/nesnesayimi.png)
 
 **GitHub Repository:** `[GitHub - AlperenSamurlu/Digital-Image-Processing-GUI](https://github.com/AlperenSamurlu/Digital-Image-Processing-GUI)**(+5 bonus puan)**
 
