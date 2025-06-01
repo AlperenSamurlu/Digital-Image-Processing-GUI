@@ -3,6 +3,7 @@ from PyQt5.QtCore import Qt
 from .widgets.Assignment1Page import Assignment1Page
 from .widgets.home_page import HomePage
 from .widgets.Assignment2Page import Assignment2Page
+from .widgets.Assignment3Page import Assignment3Page
 from PyQt5.QtWidgets import QScrollArea
 
 class MainWindow(QMainWindow):
@@ -10,8 +11,6 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("Dijital Görüntü İşleme")
         self.resize(800, 600)
-
-        from PyQt5.QtWidgets import QScrollArea
 
         scroll_area = QScrollArea()
         scroll_area.setWidgetResizable(True)
@@ -30,11 +29,13 @@ class MainWindow(QMainWindow):
 
         self.home_page = HomePage()
         self.assignment1_page = Assignment1Page()
-        self.assignment2_page = Assignment2Page()  # YENİ EKLEDİK
+        self.assignment2_page = Assignment2Page()
+        self.assignment3_page = Assignment3Page()
 
         self.stacked_widget.addWidget(self.home_page)
         self.stacked_widget.addWidget(self.assignment1_page)
-        self.stacked_widget.addWidget(self.assignment2_page)  # YENİ EKLEDİK
+        self.stacked_widget.addWidget(self.assignment2_page)
+        self.stacked_widget.addWidget(self.assignment3_page)
 
         self.stacked_widget.setCurrentWidget(self.home_page)
 
@@ -53,6 +54,9 @@ class MainWindow(QMainWindow):
         assignment2_action = assignments_menu.addAction("Ödev 2: Görüntü Operasyonları ve İnterpolasyon")
         assignment2_action.triggered.connect(self.show_assignment2)
 
+        assignment3_action = assignments_menu.addAction("Ödev 3: Gelişmiş Görüntü İşleme")
+        assignment3_action.triggered.connect(self.show_assignment3)
+
     def show_home(self):
         self.stacked_widget.setCurrentWidget(self.home_page)
 
@@ -61,3 +65,6 @@ class MainWindow(QMainWindow):
 
     def show_assignment2(self):
         self.stacked_widget.setCurrentWidget(self.assignment2_page)
+
+    def show_assignment3(self):
+        self.stacked_widget.setCurrentWidget(self.assignment3_page)
